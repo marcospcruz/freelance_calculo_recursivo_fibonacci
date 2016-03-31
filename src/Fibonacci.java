@@ -1,4 +1,3 @@
-package freelance_fibonacci;
 
 /**
  * Execução: java Fibonacci <número inteiro>
