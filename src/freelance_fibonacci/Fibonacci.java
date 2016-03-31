@@ -11,11 +11,12 @@ public class Fibonacci {
 	public static void main(String args[]) {
 
 		try {
-			
+
 			int fi = new Fibonacci().calculaFibonacci(new Integer(args[0]));
-			
-			System.out.println(fi);
-		
+
+			System.out.println("Sequência Fibonacci para o número " + args[0]
+					+ ": " + fi);
+
 		} catch (Exception e) {
 			System.out
 					.println("Erro!\nExemplo: \"java Fibonacci <número inteiro>\"");
