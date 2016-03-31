@@ -1,12 +1,25 @@
 package freelance_fibonacci;
 
+/**
+ * Execução: java Fibonacci <número inteiro>
+ * 
+ * @author
+ *
+ */
 public class Fibonacci {
 
 	public static void main(String args[]) {
 
-		int fi = new Fibonacci().calculaFibonacci(5);
-
-		System.out.println(fi);
+		try {
+			
+			int fi = new Fibonacci().calculaFibonacci(new Integer(args[0]));
+			
+			System.out.println(fi);
+		
+		} catch (Exception e) {
+			System.out
+					.println("Erro!\nExemplo: \"java Fibonacci <número inteiro>\"");
+		}
 
 	}
 
