@@ -1,4 +1,3 @@
-
 /**
  * Execução: java Fibonacci <número inteiro>
  * 
@@ -11,14 +10,22 @@ public class Fibonacci {
 
 		try {
 
-			int fi = new Fibonacci().calculaFibonacci(new Integer(args[0]));
+			int posicao = Integer.parseInt(args[0]);
 
-			System.out.println("Sequência Fibonacci para o número " + args[0]
-					+ ": " + fi);
+			if (posicao < 1) {
+				System.out
+						.println("Numero inválido! Use apenas numero positivo maior que 0(zero)");
+				return;
+			}
+
+			int fi = new Fibonacci().calculaFibonacci(posicao);
+
+			System.out.println("Valor do elemento de posicao " + posicao
+					+ " na sequencia Fibonacci: " + fi);
 
 		} catch (Exception e) {
 			System.out
-					.println("Erro!\nExemplo: \"java Fibonacci <número inteiro>\"");
+					.println("Erro!\nExemplo: \"java Fibonacci <numero inteiro>\"");
 		}
 
 	}
